@@ -1,4 +1,7 @@
+import { Link } from "react-router-dom";
+
 interface Challenge {
+  id: number; // Assuming id is of type number, add this line
   title: string;
   difficulty: "Easy" | "Medium" | "Hard";
   tags: string[];
@@ -23,7 +26,9 @@ const ChallengeCard = ({ challenge }: { challenge: Challenge }) => (
       ))}
     </div>
     {challenge.description && <p className="text-gray-700 mb-2">{challenge.description}</p>}
-    <button className="mt-2 px-4 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Mark as Solved</button>
+    <Link to={`/challenge/${challenge.id}`} className="mt-2 px-4 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+      Solve Challenge
+    </Link>
   </div>
 );
 

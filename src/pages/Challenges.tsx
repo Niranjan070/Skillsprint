@@ -3,18 +3,21 @@ import { Challenge } from "./Home";
 
 const challenges: Challenge[] = [
   {
+    id: 1,
     title: "Reverse a Linked List",
     difficulty: "Medium", // Correct literal type
     tags: ["Linked List", "Pointers"],
     description: "Write a function to reverse a singly linked list.",
   },
   {
+    id: 2,
     title: "Two Sum",
     difficulty: "Easy", // Correct literal type
     tags: ["Array", "Hash Table"],
     description: "Find two numbers that add up to a target value.",
   },
   {
+    id: 3,
     title: "LRU Cache",
     difficulty: "Hard", // Correct literal type
     tags: ["Design", "Hash Table"],
